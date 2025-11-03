@@ -40,9 +40,7 @@ Siga os passos abaixo para configurar e rodar o projeto em seu ambiente local.
 git clone [https://www.youtube.com/watch?v=RqfwLeY952s](https://www.youtube.com/watch?v=RqfwLeY952s)
 cd [NOME DA PASTA PRINCIPAL DO PROJETO]
 
-### BANCO DE DADOS
-
-``` script do banco
+### CRIAR O BANCO DE DADOS
 
 -- Cria o banco de dados
 CREATE DATABASE IF NOT EXISTS face_id_db;

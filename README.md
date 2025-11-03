@@ -40,6 +40,8 @@ Siga os passos abaixo para configurar e rodar o projeto em seu ambiente local.
 git clone [https://www.youtube.com/watch?v=RqfwLeY952s](https://www.youtube.com/watch?v=RqfwLeY952s)
 cd [NOME DA PASTA PRINCIPAL DO PROJETO]
 
+
+////////////////////////////////////////////////////////
 ### CRIAR O BANCO DE DADOS
 
 -- Cria o banco de dados
@@ -52,3 +54,12 @@ CREATE TABLE users (
     email VARCHAR(255) UNIQUE NOT NULL,
     face_descriptor JSON NOT NULL
 );
+
+////////////////////////////////////////////////////////
+### Baixar os Modelos:
+
+É necessário baixar os seguintes modelos do face-api.js (arquivos .json e os arquivos de weights):
+
+* ** ssd_mobilenetv1_model (Detecção)
+* ** face_landmark_68_model (Pontos de Referência)
+* ** face_recognition_model (Descritores Faciais)

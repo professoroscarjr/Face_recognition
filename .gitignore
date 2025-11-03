@@ -1,0 +1,61 @@
+# ===============================================
+# Configuração Geral
+# ===============================================
+.DS_Store
+.env
+.env.local
+.vscode/
+
+# ===============================================
+# 1. Backend (Node.js/Express)
+# ===============================================
+
+# Módulos instalados:
+/face-recognition-backend/node_modules
+
+# Arquivos de log de debug do Node:
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log*
+
+# Variáveis de ambiente (cruciais para senhas do MySQL):
+/face-recognition-backend/.env
+
+# Logs e arquivos de build/cache
+/face-recognition-backend/dist
+/face-recognition-backend/build
+/face-recognition-backend/tmp
+
+# ===============================================
+# 2. Frontend (React/CRA)
+# ===============================================
+
+# Módulos instalados:
+/face-recognition-frontend/node_modules
+
+# Arquivos de build (o resultado final da compilação do React):
+/face-recognition-frontend/build
+
+# Cache de testes/desenvolvimento
+/face-recognition-frontend/coverage
+.cache
+
+# Configurações do ambiente local do React:
+/face-recognition-frontend/.env.local
+/face-recognition-frontend/.env.development.local
+/face-recognition-frontend/.env.test.local
+/face-recognition-frontend/.env.production.local
+
+# Arquivos específicos do craco (se você o usou para remover o warning)
+/face-recognition-frontend/.cracorc
+
+# ===============================================
+# 3. Modelos de IA
+# ===============================================
+# Se você baixar os modelos do face-api.js separadamente, eles podem 
+# ser grandes. Recomenda-se adicioná-los ao .gitignore e pedir para 
+# os colaboradores baixarem separadamente.
+
+# Se a pasta 'models' estiver dentro do 'public' do frontend:
+#/face-recognition-frontend/public/models
+# (Descomente a linha acima se quiser ignorar os modelos de IA)
